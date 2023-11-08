@@ -1,0 +1,12 @@
+// Colors
+:root {
+  --color-pink: lightcoral;
+}
+
+// Spacing
+:root {
+  --space: 20px;
+  --space-half: calc(var(--space) - 10px);
+  --space-double: calc(var(--space) * 2);
+  --space-triple: calc(var(--space) * 3);
+}
