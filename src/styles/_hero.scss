@@ -14,19 +14,24 @@
   
   &__photo {
     display: flex;
-    align-items: center;
+    align-items: center;    
   }
   
   &__photo-headshot {
     background: skyblue;
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     margin: auto;
     border-radius: 50%;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   
   &__text {
-    // background: lightcoral;
     min-height: 300px;
   }
 }

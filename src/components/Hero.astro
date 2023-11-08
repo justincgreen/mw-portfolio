@@ -1,16 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import headshot from "../images/headshot@2x.jpg";
+---
+
 <div class="hero u-padding--top--md">
   <div class="hero__grid">
     <div class="hero__photo">
       <div class="hero__photo-headshot">
+        <Image src={headshot} alt="Miranda Wilson" />
+        <!-- <img src="https://fastly.picsum.photos/id/237/400/400.jpg?hmac=xOOBt-lNJA0YjxEj0QoS_0PZV5iI3oxZA_weJ4E1xEw" alt="Miranda Wilson" /> -->
       </div>
     </div>
     
     <div class="hero__text">
-      <h2>Miranda Wilson</h2>
-      <h3 class="u-padding--bottom--sm">Senior Project Manager</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad necessitatibus ea cumque labore maiores porro esse repellat a nulla veniam autem soluta ab officia, eos voluptate mollitia. Non magnam perferendis veritatis provident doloribus excepturi voluptates ratione itaque eum, saepe sequi eveniet sunt nemo suscipit dolore illo ea laborum explicabo voluptatum? Sunt dolorum hic ut neque fugiat nisi mollitia placeat recusandae sed est modi, adipisci totam. Minus eos, laboriosam quaerat eveniet ut fugit tempora! Culpa nemo commodi non officia! Velit non dolorum repellendus? Architecto eius nulla suscipit ullam voluptatibus voluptatum quibusdam animi vitae quas ducimus accusamus, adipisci, numquam recusandae vero!
+      <h2 class="u-padding--bottom--sm">My Story</h2>
+      <p class="u-margin--bottom--sm">
+      Hi! I’m Miranda. As a seasoned marketer, project manager, copywriter, communications expert, and team lead with over 17 years of experience, I specialize in creating meaningful, results-driven content, products, and campaigns.
       </p>
+      <p class="u-margin--bottom--sm">
+        My expertise spans many industries and evironments, including B2B, B2C, e-commerce, nonprofit, corporate, and editorial. I am passionate about creativity, strategizing, interpersonal communications, maximizing team strengths, and customer satisfaction - helping businesses elevate their bottom line and achieve their objectives.
+      </p>
+      <h3>Hobbies & Interests</h3>
+      <p class="u-margin--bottom--sm">
+        National Parks, traveling, hiking, being outside, health and wellness, gardening, reading, and spending time with my family
+      </p>
+      <h3>Contact</h3>
+      <a href="mailto:hello.mlwilson@gmail.com">hello.mlwilson@gmail.com</a>
     </div>
   </div>
 </div>

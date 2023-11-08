@@ -2,8 +2,50 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Projects | Miranda Wilson - Senior Project Manager ">  
+<Layout title="Projects | Miranda Wilson">  
   <div class="container u-padding--top--md">
     <h1>Projects</h1>
+    
+    <div class="grid">
+      <div class="column">
+        <h2>OU Health</h2>
+      </div>
+      <div class="column">
+        <h2>University of Oklahoma</h2>
+      </div>
+      <div class="column">
+        <h2>YMCA</h2>
+      </div>
+      <div class="column">
+        <h2>Express Employment Professionals</h2>
+      </div>
+      <div class="column">
+        <h2>Arts Council OKC</h2>
+      </div>
+      <div class="column">
+        <h2>Ohlovelyone</h2>
+      </div>
+    </div>
   </div>
 </Layout>
+
+<style lang="scss">
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+        
+    // Add below to prevent content overflow
+    > * {
+      min-width: 0px;
+    }
+    
+    .column {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: lightcoral;
+      min-height: 300px;
+    }
+  }
+</style>

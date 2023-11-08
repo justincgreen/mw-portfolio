@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@100;300&display=swap');
+
 // Colors
 :root {
   --color-pink: lightcoral;
@@ -9,4 +11,11 @@
   --space-half: calc(var(--space) - 10px);
   --space-double: calc(var(--space) * 2);
   --space-triple: calc(var(--space) * 3);
+}
+
+// Fonts
+:root {
+  --font-family-body: "Roboto", sans-serif;
+  --font-family-heading: "Agbalumo", serif;
+  --font-size-lg: 20px;
 }
