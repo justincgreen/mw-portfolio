@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+// Data
+import ouHealthData from '../../data/ouHealthData.json';
+
+export function getStaticPaths() {
+  return [
+    {params: {project: 'ou'}},
+  ];
+}
+
+const { project } = Astro.params;
+
+---
+
+<Layout title="Projects | Miranda Wilson">  
+  <div class="container u-padding--top--md">
+    { project == 'ou' ? 
+      ouHealthData.map((content) => (content.projectTitle)) 
+      : '' }
+    <!-- <h1>{ project } Project</h1> -->
+    <!-- Could do conditional like if project === 'project-name-here' and then map over associated JSON file with the page content-->
+  </div>
+</Layout>
