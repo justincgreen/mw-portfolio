@@ -1,0 +1,29 @@
+.c-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://fastly.picsum.photos/id/740/536/354.jpg?hmac=FEZtXn-RDrVWDOPFT3ihLYZmxa-x-ENiGOY1JGArWGQ");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightcoral;
+  border-radius: var(--border-radius-default);
+  min-height: 250px;
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    background-color: rgb(0 0 0 / 60%);
+    position: absolute;
+    inset: 0;
+    z-index: var(--z-index-100);
+  }
+  
+  &__title {
+    font-size: var(--font-size-xxl);
+    text-align: center;
+    position: relative;
+    z-index: var(--z-index-200);
+  }
+}

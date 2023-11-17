@@ -1,32 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+// import PageLink from '../components/PageLink.astro';
 ---
 
 <Layout title="Projects | Miranda Wilson">  
   <div class="container u-padding--top--md">
-    <h1>Projects</h1>
+    <h1 class="u-padding--bottom--sm">Projects</h1>
     
     <div class="grid">
-      <div class="column">
-        <a href="/projects/ou">
-          <h2>OU Health</h2>
-        </a>
-      </div>
-      <div class="column">
-        <h2>University of Oklahoma</h2>
-      </div>
-      <div class="column">
-        <h2>YMCA</h2>
-      </div>
-      <div class="column">
-        <h2>Express Employment Professionals</h2>
-      </div>
-      <div class="column">
-        <h2>Arts Council OKC</h2>
-      </div>
-      <div class="column">
-        <h2>Ohlovelyone</h2>
-      </div>
+      <!-- <PageLink url="/projects/ou-health" title="OU Health"/> -->
+      <Card url="/projects/ou-health" title="OU Health" />
+      <Card url="/projects/university-of-oklahoma" title="University of Oklahoma" />
+      <Card url="/projects/ymca" title="YMCA" />
+      <Card url="/projects/express-employment-professionals" title="Express Employment Professionals" />
+      <Card url="/projects/arts-council-okc" title="Arts Council OKC" />
+      <Card url="/projects/ohlovelyone" title="Ohlovelyone" />
     </div>
   </div>
 </Layout>
@@ -42,12 +31,10 @@ import Layout from '../layouts/Layout.astro';
       min-width: 0px;
     }
     
-    .column {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: lightcoral;
-      min-height: 300px;
-    }
+    // .column {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;      
+    // }
   }
 </style>

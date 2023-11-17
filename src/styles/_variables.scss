@@ -3,6 +3,9 @@
 // Colors
 :root {
   --color-pink: lightcoral;
+  --color-pink-light: #fff3f3;
+  --color-black: #000;
+  --color-white: #fff;
 }
 
 // Spacing
@@ -18,4 +21,13 @@
   --font-family-body: "Roboto", sans-serif;
   --font-family-heading: "Agbalumo", serif;
   --font-size-lg: 20px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 40px;
+}
+
+// Misc
+:root {
+  --border-radius-default: 10px;
+  --z-index-100: 100;
+  --z-index-200: 200;
 }
