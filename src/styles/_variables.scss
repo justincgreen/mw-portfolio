@@ -3,7 +3,8 @@
 // Colors
 :root {
   --color-pink: lightcoral;
-  --color-pink-light: #fff3f3;
+  --color-pink-light: #faf1f1;
+  --color-teal: #20a8a5;
   --color-black: #000;
   --color-white: #fff;
 }
@@ -28,6 +29,7 @@
 // Misc
 :root {
   --border-radius-default: 10px;
+  --transition-all: all 0.2s ease;
   --z-index-100: 100;
   --z-index-200: 200;
 }

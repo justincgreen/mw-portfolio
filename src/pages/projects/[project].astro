@@ -3,6 +3,11 @@ import Layout from '../../layouts/Layout.astro';
 
 // Data
 import ouHealthData from '../../data/ouHealthData.json';
+import universityData from '../../data/universityData.json';
+import ymcaData from '../../data/ymcaData.json';
+import expressData from '../../data/expressData.json';
+import artsCouncilData from '../../data/artsCouncilData.json';
+import ohlovelyoneData from '../../data/ohlovelyoneData.json';
 
 export function getStaticPaths() {
   return [
@@ -21,13 +26,42 @@ const { project } = Astro.params;
 
 <Layout title="Projects | Miranda Wilson">  
   <div class="container u-padding--top--md">
-    { 
-      project == 'ou-health' 
-      ? 
-      ouHealthData.map((content) => (content.projectTitle)) 
-      : '' 
+    {
+      (() => {
+        switch(project) {
+          case 'ou-health': return ouHealthData.map((content) => 
+            (
+              <h1>{content.projectTitle}</h1>
+            )
+          );
+          case 'university-of-oklahoma': return universityData.map((content) => 
+            (
+              <h1>{content.projectTitle}</h1>
+            )
+          );
+          case 'ymca': return ymcaData.map((content) => 
+            (
+              <h1>{content.projectTitle}</h1>
+            )
+          );
+          case 'express-employment-professionals': return expressData.map((content) => 
+            (
+              <h1>{content.projectTitle}</h1>
+            )
+          );
+          case 'arts-council-okc': return artsCouncilData.map((content) => 
+            (
+              <h1>{content.projectTitle}</h1>
+            )
+          );
+          case 'ohlovelyone': return ohlovelyoneData.map((content) => 
+            (
+              <h1>{content.projectTitle}</h1>
+            )
+          ) ;
+          default: return null;
+        }
+      })()
     }
-    <!-- <h1>{ project } Project</h1> -->
-    <!-- Could do conditional like if project === 'project-name-here' and then map over associated JSON file with the page content-->
   </div>
 </Layout>

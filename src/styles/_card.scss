@@ -20,10 +20,17 @@
     z-index: var(--z-index-100);
   }
   
+  &:hover {
+    .c-card__title {
+      color: var(--color-teal);
+    }
+  }
+  
   &__title {
     font-size: var(--font-size-xxl);
     text-align: center;
     position: relative;
+    transition: var(--transition-all);
     z-index: var(--z-index-200);
   }
 }

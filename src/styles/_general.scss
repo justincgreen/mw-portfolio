@@ -7,3 +7,11 @@ p {
   line-height: 1.5;
   font-size: 18px;
 }
+
+a {
+  color: var(--color-black);
+  
+  &:hover {
+    color: var(--color-teal);
+  }
+}

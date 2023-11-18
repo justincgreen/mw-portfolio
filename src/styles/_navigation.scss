@@ -1,20 +1,31 @@
 .c-navigation {
   padding: 20px 0;  
-  border-bottom: 1px solid salmon;
+  background-color: var(--color-white);
+  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
   
   &__logo {
     font-size: 30px;
     font-family: var(--font-family-heading);
     color: var(--color-black);
+    transition: var(--transition-all);
+    
+    &:hover {
+      color: var(--color-teal);
+    }
   }
   
   &__links {
     display: flex;
     gap: 20px;
   }
-}
-
-.container--flex {
-  align-items: center;
-  justify-content: space-between;
+  
+  &__link {
+    font-weight: bold;
+    color: var(--color-black);
+    transition: var(--transition-all);
+    
+    &:hover {
+      color: var(--color-teal);
+    }
+  }
 }
