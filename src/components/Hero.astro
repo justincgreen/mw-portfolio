@@ -30,3 +30,13 @@ import headshot from "../images/headshot@2x.jpg";
     </div>
   </div>
 </div>
+
+<script is:inline>
+  setTimeout(() => {
+    document.querySelector('.hero__photo-headshot').classList.add('is-active');
+  }, 100);
+  
+  setTimeout(() => {
+    document.querySelector('.hero__text').classList.add('is-active');
+  }, 500);   
+</script>

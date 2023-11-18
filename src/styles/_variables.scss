@@ -12,9 +12,9 @@
 // Spacing
 :root {
   --space: 20px;
-  --space-half: calc(var(--space) - 10px);
-  --space-double: calc(var(--space) * 2);
-  --space-triple: calc(var(--space) * 3);
+  --space-half: calc(var(--space) - 10px); // 10px
+  --space-double: calc(var(--space) * 2); // 40px
+  --space-triple: calc(var(--space) * 3); // 60px
 }
 
 // Fonts
@@ -30,6 +30,7 @@
 :root {
   --border-radius-default: 10px;
   --transition-all: all 0.2s ease;
+  --transition-slow: all 0.5s ease;
   --z-index-100: 100;
   --z-index-200: 200;
 }

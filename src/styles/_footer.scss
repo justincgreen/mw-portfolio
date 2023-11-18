@@ -1,0 +1,8 @@
+ .c-footer {
+  text-align: center;
+  padding: 100px var(--space) var(--space-triple) var(--space);
+  
+  @media(max-width: 767px) {
+    padding: var(--space-triple) var(--space);
+  }
+}
