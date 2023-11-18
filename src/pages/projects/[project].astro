@@ -31,32 +31,38 @@ const { project } = Astro.params;
         switch(project) {
           case 'ou-health': return ouHealthData.map((content) => 
             (
-              <h1>{content.projectTitle}</h1>
+              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
+              <p>{content.projectDescription}</p>
             )
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
-              <h1>{content.projectTitle}</h1>
+              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
+              <p>{content.projectDescription}</p>
             )
           );
           case 'ymca': return ymcaData.map((content) => 
             (
-              <h1>{content.projectTitle}</h1>
+              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
+              <p>{content.projectDescription}</p>
             )
           );
           case 'express-employment-professionals': return expressData.map((content) => 
             (
-              <h1>{content.projectTitle}</h1>
+              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
+              <p>{content.projectDescription}</p>
             )
           );
           case 'arts-council-okc': return artsCouncilData.map((content) => 
             (
-              <h1>{content.projectTitle}</h1>
+              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
+              <p>{content.projectDescription}</p>
             )
           );
           case 'ohlovelyone': return ohlovelyoneData.map((content) => 
             (
-              <h1>{content.projectTitle}</h1>
+              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
+              <p>{content.projectDescription}</p>
             )
           ) ;
           default: return null;
