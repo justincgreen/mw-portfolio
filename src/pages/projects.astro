@@ -19,22 +19,3 @@ import Card from '../components/Card.astro';
     </div>
   </div>
 </Layout>
-
-<style lang="scss">
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-        
-    // Add below to prevent content overflow
-    > * {
-      min-width: 0px;
-    }
-    
-    // .column {
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    // }
-  }
-</style>

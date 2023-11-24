@@ -9,6 +9,10 @@
     color: var(--color-black);
     transition: var(--transition-all);
     
+    @media(max-width: 767px) {
+      font-size: 24px;
+    }
+    
     &:hover {
       color: var(--color-teal);
     }
@@ -17,6 +21,10 @@
   &__links {
     display: flex;
     gap: 20px;
+    
+    @media(max-width: 767px) {
+      display: none;
+    }
   }
   
   &__link {

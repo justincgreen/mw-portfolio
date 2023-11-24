@@ -12,6 +12,10 @@
   position: relative;
   overflow: hidden;
   
+  @media(max-width: 767px) {
+    min-height: 150px;
+  }
+  
   &::before {
     content: "";
     background-color: rgb(0 0 0 / 60%);
@@ -32,5 +36,9 @@
     position: relative;
     transition: var(--transition-all);
     z-index: var(--z-index-200);
+    
+    @media(max-width: 767px) {
+      font-size: 30px;
+    }
   }
 }

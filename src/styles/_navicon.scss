@@ -1,0 +1,14 @@
+.c-navicon {
+  display: none;
+  
+  @media(max-width: 767px) {
+    display: block;
+  }
+  
+  &__bar {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: var(--color-black);
+  }
+}
