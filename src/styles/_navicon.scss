@@ -3,12 +3,31 @@
   
   @media(max-width: 767px) {
     display: block;
+    
+    &.is-active {
+      .c-navicon__bar {
+        &:first-of-type {
+          display: none;
+        }
+        
+        &:nth-of-type(2) {
+          transform: rotate(-45deg);
+        }
+        
+        &:nth-of-type(3) {
+          transform: rotate(45deg);
+          top: -6px;
+        }
+      }
+    }
   }
   
   &__bar {
     width: 30px;
     height: 3px;
     margin-bottom: 3px;
-    background-color: var(--color-black);
+    background-color: var(--color-black);     
+    transition: var(--transition-slow);  
+    position: relative;
   }
 }
