@@ -1,6 +1,10 @@
 body {
   font-family: var(--font-family-body);
   background-color: var(--color-pink-light);
+  
+  &.is-active {
+    padding-top: 75px;
+  }
 }
 
 p {

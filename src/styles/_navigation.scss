@@ -3,6 +3,18 @@
   background-color: var(--color-white);
   box-shadow: 0 0 5px rgb(0 0 0 / 30%);
   
+  @media(max-width: 767px) {
+    height: 75px;
+    
+    &.is-active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: var(--z-index-300);
+    }
+  }
+  
   &__logo {
     font-size: 30px;
     font-family: var(--font-family-heading);
@@ -23,7 +35,22 @@
     gap: 20px;
     
     @media(max-width: 767px) {
-      display: none;
+      &.is-active {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+      }
+     
+      display: block;
+      position: fixed;
+      inset: 0;
+      top: 75px;
+      padding: 0 var(--space);
+      background-color: var(--color-white);      
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden; 
+      transition: var(--transition-slow);      
     }
   }
   
@@ -31,6 +58,11 @@
     font-weight: 300;
     color: var(--color-black);
     transition: var(--transition-all);
+    
+    @media(max-width: 767px) {
+      display: block;
+      margin-bottom: 15px;
+    }
     
     &:hover {
       color: var(--color-teal);

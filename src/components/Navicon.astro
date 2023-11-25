@@ -8,7 +8,9 @@
   const naviconToggle = () => {
     if(document.querySelector('.c-navicon')) {
       document.querySelector('.c-navicon').addEventListener(('click'), () => {
-        alert();
+        document.querySelector('.c-navigation__links').classList.toggle('is-active');
+        document.querySelector('.c-navigation').classList.toggle('is-active');
+        document.body.classList.toggle('is-active');
       });
     }
   }
