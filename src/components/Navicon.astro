@@ -3,3 +3,19 @@
   <div class="c-navicon__bar"></div>
   <div class="c-navicon__bar"></div>
 </div>
+
+<script>
+  const naviconToggle = () => {
+    if(document.querySelector('.c-navicon')) {
+      document.querySelector('.c-navicon').addEventListener(('click'), () => {
+        alert();
+      });
+    }
+  }
+  
+  naviconToggle();
+  
+  document.addEventListener('astro:after-swap', () => {
+    naviconToggle();
+  });
+</script>
