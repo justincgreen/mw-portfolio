@@ -32,37 +32,37 @@ const { project } = Astro.params;
           case 'ou-health': return ouHealthData.map((content) => 
             (
               <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p>{content.projectDescription}</p>
+              <p class="project__description">{content.projectDescription}</p>
             )
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
               <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p>{content.projectDescription}</p>
+              <p class="project__description">{content.projectDescription}</p>
             )
           );
           case 'ymca': return ymcaData.map((content) => 
             (
               <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p>{content.projectDescription}</p>
+              <p class="project__description">{content.projectDescription}</p>
             )
           );
           case 'express-employment-professionals': return expressData.map((content) => 
             (
               <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p>{content.projectDescription}</p>
+              <p class="project__description">{content.projectDescription}</p>
             )
           );
           case 'arts-council-okc': return artsCouncilData.map((content) => 
             (
               <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p>{content.projectDescription}</p>
+              <p class="project__description">{content.projectDescription}</p>
             )
           );
           case 'ohlovelyone': return ohlovelyoneData.map((content) => 
             (
               <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p>{content.projectDescription}</p>
+              <p class="project__description">{content.projectDescription}</p>
             )
           ) ;
           default: return null;
