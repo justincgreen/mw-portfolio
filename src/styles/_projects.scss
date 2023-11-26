@@ -1,4 +1,10 @@
-.project {
+.c-project {
+  &__block {
+    display: flex;
+    align-items: top; 
+    justify-content: space-between;
+  }
+  
   &__description {
     width: 50%;
   }

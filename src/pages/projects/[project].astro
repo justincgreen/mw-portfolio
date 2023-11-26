@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Project from '../../components/Project.astro';
 
 // Data
 import ouHealthData from '../../data/ouHealthData.json';
@@ -31,38 +32,32 @@ const { project } = Astro.params;
         switch(project) {
           case 'ou-health': return ouHealthData.map((content) => 
             (
-              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p class="project__description">{content.projectDescription}</p>
+              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
             )
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
-              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p class="project__description">{content.projectDescription}</p>
+              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
             )
           );
           case 'ymca': return ymcaData.map((content) => 
             (
-              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p class="project__description">{content.projectDescription}</p>
+              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
             )
           );
           case 'express-employment-professionals': return expressData.map((content) => 
             (
-              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p class="project__description">{content.projectDescription}</p>
+              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
             )
           );
           case 'arts-council-okc': return artsCouncilData.map((content) => 
             (
-              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p class="project__description">{content.projectDescription}</p>
+              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
             )
           );
           case 'ohlovelyone': return ohlovelyoneData.map((content) => 
             (
-              <h1 class="u-margin--bottom--sm">{content.projectTitle}</h1>
-              <p class="project__description">{content.projectDescription}</p>
+              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
             )
           ) ;
           default: return null;
