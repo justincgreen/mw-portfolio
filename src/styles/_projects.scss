@@ -1,11 +1,19 @@
 .c-project {
   &__block {
     display: flex;
-    align-items: top; 
+    align-items: flex-start; 
     justify-content: space-between;
+    
+    @media(max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
   
   &__description {
     width: 50%;
+    
+    @media(max-width: 767px) {
+      width: 100%;
+    }
   }
 }
