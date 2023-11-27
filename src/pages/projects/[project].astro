@@ -34,37 +34,37 @@ const { project } = Astro.params;
           case 'ou-health': return ouHealthData.map((content) => 
             (
               <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
-                <Pagination />
+              <Pagination projectTitle="ou-health" nextLink="/projects/university-of-oklahoma" />
             )
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
               <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
-              <Pagination />
+              <Pagination previousLink="/projects/ou-health" nextLink="/projects/ymca" />
             )
           );
           case 'ymca': return ymcaData.map((content) => 
             (
               <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
-              <Pagination />
+              <Pagination previousLink="/projects/university-of-oklahoma" nextLink="/projects/express-employment-professionals" />
             )
           );
           case 'express-employment-professionals': return expressData.map((content) => 
             (
               <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
-              <Pagination />
+              <Pagination previousLink="/projects/ymca" nextLink="/projects/arts-council-okc" />
             )
           );
           case 'arts-council-okc': return artsCouncilData.map((content) => 
             (
               <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
-              <Pagination />
+              <Pagination previousLink="/projects/express-employment-professionals" nextLink="/projects/ohlovelyone" />
             )
           );
           case 'ohlovelyone': return ohlovelyoneData.map((content) => 
             (
               <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
-              <Pagination />
+              <Pagination projectTitle="ohlovelyone" previousLink="/projects/arts-council-okc" />
             )
           ) ;
           default: return null;

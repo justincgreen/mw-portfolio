@@ -1,11 +1,8 @@
 ---
-const { projectTitle } = Astro.props;
-// need logic to determine if there is another project before of after current project
-// Example logic below
-// if projectTitle === 'ou-health' dont show previous project link etc..
+const { projectTitle, previousLink, nextLink } = Astro.props;
 ---
 
 <div class="c-pagination">
-  <a href="#">Previous Project</a>
-  <a href="#">Next Project</a>
+  { projectTitle === "ou-health" ? null : <a href={previousLink} class="c-pagination__link">Previous Project</a> }
+  { projectTitle === "ohlovelyone" ? null : <a href={nextLink} class="c-pagination__link">Next Project</a> }
 </div>
