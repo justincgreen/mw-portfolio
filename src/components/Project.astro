@@ -1,11 +1,15 @@
 ---
-const { title, description, imageOne } = Astro.props;
+const { title, description, imageOne, industry } = Astro.props;
 ---
 
 <div class="c-project">
   <h1 class="c-project__title u-margin--bottom--sm">{title}</h1>
+  <h3 class="c-project__industry u-margin--bottom--sm">Industry: {industry}</h3>
+  
   <div class="c-project__block">
     <p class="c-project__description">{description}</p>
     { imageOne ? <img class="c-project__image" src={imageOne} alt="Project Image"> : null }
-  </div>
+  </div>  
+  
+  <slot />
 </div>

@@ -33,7 +33,30 @@ const { project } = Astro.params;
         switch(project) {
           case 'ou-health': return ouHealthData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
+              <Project 
+                title={content.projectTitle} 
+                description={content.projectDescription} 
+                imageOne={content.projectImageOne}
+                industry={content.industry} 
+              >
+                <h4>Services Provided</h4>
+                <ul>
+                  <li>Team Management</li>
+                  <li>Project Management</li>
+                  <li>Communication + Marketing Plan Development</li>
+                  <li>Executive Communications</li>
+                  <li>Employee Engagement</li>
+                  <li>Writing</li>
+                  <li>Editing</li>
+                  <li>Crisis Communications</li>
+                  <li>Change Management</li>
+                  <li>Brand Management</li>
+                 <li> Technology Integration</li>
+                 <li> Strategy Development + Alignment</li>
+                  <li>Analytics</li>
+                  <li>Customer Service</li>
+                </ul>
+              </Project>
               <Pagination projectTitle="ou-health" nextLink="/projects/university-of-oklahoma" />
             )
           );
