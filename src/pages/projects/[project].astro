@@ -39,23 +39,49 @@ const { project } = Astro.params;
                 imageOne={content.projectImageOne}
                 industry={content.industry} 
               >
-                <h4>Services Provided</h4>
-                <ul>
-                  <li>Team Management</li>
-                  <li>Project Management</li>
-                  <li>Communication + Marketing Plan Development</li>
-                  <li>Executive Communications</li>
-                  <li>Employee Engagement</li>
-                  <li>Writing</li>
-                  <li>Editing</li>
-                  <li>Crisis Communications</li>
-                  <li>Change Management</li>
-                  <li>Brand Management</li>
-                 <li> Technology Integration</li>
-                 <li> Strategy Development + Alignment</li>
-                  <li>Analytics</li>
-                  <li>Customer Service</li>
-                </ul>
+                <div class="c-project__meta">
+                  <div class="c-project__objective u-padding--bottom--md">
+                    <h4>Objective</h4>
+                    <p>To align internal communications and marketing with OU Health’s business objectives and build pride of place and employee engagement by communicating important news, policies, and updates to more than 11,000 employees.</p>
+                  </div>
+                  
+                  <div class="c-project__meta--wrap">                                        
+                    <div class="c-project__meta--left">
+                      <h4>Services Provided</h4>
+                      <ul>
+                        <li>Team Management</li>
+                        <li>Project Management</li>
+                        <li>Communication + Marketing Plan Development</li>
+                        <li>Executive Communications</li>
+                        <li>Employee Engagement</li>
+                        <li>Writing</li>
+                        <li>Editing</li>
+                        <li>Crisis Communications</li>
+                        <li>Change Management</li>
+                        <li>Brand Management</li>
+                        <li>Technology Integration</li>
+                        <li>Strategy Development + Alignment</li>
+                        <li>Analytics</li>
+                        <li>Customer Service</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--right">
+                      <h4>Technologies Used</h4>
+                      <ul>
+                        <li>Microsoft Office</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Mailchimp</li>
+                        <li>Staffbase</li>
+                        <li>Workamajig</li>
+                        <li>Google Tools</li>
+                        <li>Outlook</li>
+                        <li>Zoom</li>
+                        <li>Microsoft Teams</li>
+                      </ul>
+                    </div>
+                  </div>                                  
+                </div>                                
               </Project>
               <Pagination projectTitle="ou-health" nextLink="/projects/university-of-oklahoma" />
             )
