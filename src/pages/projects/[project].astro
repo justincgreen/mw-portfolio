@@ -39,14 +39,14 @@ const { project } = Astro.params;
                 imageOne={content.projectImageOne}
                 industry={content.industry} 
               >
-                <div class="c-project__meta">
-                  <div class="c-project__objective u-padding--bottom--md">
+                <div class="c-project__meta" slot="project-meta">
+                  <div class="u-margin--bottom--sm">
                     <h4>Objective</h4>
                     <p>To align internal communications and marketing with OU Health’s business objectives and build pride of place and employee engagement by communicating important news, policies, and updates to more than 11,000 employees.</p>
-                  </div>
+                  </div>                  
                   
-                  <div class="c-project__meta--wrap">                                        
-                    <div class="c-project__meta--left">
+                  <div class="c-project__meta--wrap">                                              
+                    <div class="c-project__meta--block">
                       <h4>Services Provided</h4>
                       <ul>
                         <li>Team Management</li>
@@ -66,7 +66,7 @@ const { project } = Astro.params;
                       </ul>
                     </div>
                     
-                    <div class="c-project__meta--right">
+                    <div class="c-project__meta--block">
                       <h4>Technologies Used</h4>
                       <ul>
                         <li>Microsoft Office</li>
@@ -80,6 +80,13 @@ const { project } = Astro.params;
                         <li>Microsoft Teams</li>
                       </ul>
                     </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4>Industry</h4>
+                      <ul>
+                        <li>Healthcare</li>
+                      </ul>
+                    </div>                                        
                   </div>                                  
                 </div>                                
               </Project>
@@ -88,7 +95,53 @@ const { project } = Astro.params;
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
+             <Project 
+               title={content.projectTitle} 
+               description={content.projectDescription} 
+               imageOne={content.projectImageOne} 
+               industry={content.industry}
+             >              
+               <div class="c-project__meta" slot="project-meta">
+                 <div class="u-margin--bottom--sm">
+                   <h4>Objective</h4>
+                   <p>To promote OU’s College of International Studies to current, prospective students and donors by highlighting the education, degrees and study abroad opportunities offered.</p>
+                 </div>
+                 
+                 <div class="c-project__meta--wrap">                                         
+                   <div class="c-project__meta--block">
+                     <h4>Services Provided</h4>
+                     <ul>
+                      <li>Project Management</li>
+                      <li>Brand Management</li>
+                      <li>Content Creation</li>
+                      <li>Media Relations</li>
+                      <li>Internal Communications</li>
+                      <li>Fundraising</li>
+                      <li>Advertising and Promotion</li>
+                      <li>Student Recruitment</li>
+                      <li>Customer Service</li>
+                     </ul>
+                   </div>
+                   
+                   <div class="c-project__meta--block">
+                     <h4>Technologies Used</h4>
+                     <ul>
+                       <li>Microsoft Office</li>
+                       <li>Adobe Photoshop</li>
+                       <li>Google Tools</li>                       
+                       <li>Outlook</li>
+                     </ul>
+                   </div>
+                   
+                   <div class="c-project__meta--block">
+                     <h4>Industry</h4>
+                     <ul>
+                       <li>Higher Education</li>
+                     </ul>
+                   </div>                                  
+                 </div>                                  
+               </div> 
+             </Project>
               <Pagination previousLink="/projects/ou-health" nextLink="/projects/ymca" />
             )
           );
@@ -112,7 +165,54 @@ const { project } = Astro.params;
           );
           case 'ohlovelyone': return ohlovelyoneData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} imageOne={content.projectImageOne} />
+              <Project 
+                title={content.projectTitle} 
+                description={content.projectDescription} 
+                imageOne={content.projectImageOne} 
+                industry={content.industry}
+              >              
+                <div class="c-project__meta" slot="project-meta">
+                  <div class="u-margin--bottom--sm">
+                    <h4>Objective</h4>
+                    <p>To develop a dynamic brand that showcases fun, color, warmth, and style while embodying the vision and business goals of Ohlovelyone.</p>
+                  </div>
+                  
+                  <div class="c-project__meta--wrap">                                         
+                    <div class="c-project__meta--block">
+                      <h4>Services Provided</h4>
+                      <ul>
+                        <li>Brand Development</li>
+                        <li>Web Design</li>
+                        <li>Marketing</li>
+                        <li>Social Media Management</li>
+                        <li>Project Management</li>
+                        <li>Ongoing Maintenance</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4>Technologies Used</h4>
+                      <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Canva</li>
+                        <li>Shopify</li>
+                        <li>Mailchimp</li>
+                        <li>Trello</li>
+                        <li>Google Tools</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4>Industry</h4>
+                      <ul>
+                        <li>Retail</li>
+                        <li>E-Commerce</li>
+                        <li>Fashion</li>
+                      </ul>
+                    </div>                                  
+                  </div>                                  
+                </div> 
+              </Project>
               <Pagination projectTitle="ohlovelyone" previousLink="/projects/arts-council-okc" />
             )
           ) ;
