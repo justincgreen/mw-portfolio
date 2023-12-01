@@ -10,7 +10,7 @@ const { title, description, imageOne, industry } = Astro.props;
     <div class="c-project__description u-margin--bottom--sm">
       
       <p>{description}</p>
-      <div class="c-project__image">{ imageOne ? <img class="c-project__image" src={imageOne} alt="Project Image"> : null }</div>
+      <div class="c-project__image">{ imageOne ? <img class="c-project__image" src={imageOne.src} alt="Project Image"> : null }</div>
     </div>
     <slot name="project-meta" />       
   </div>    
