@@ -1,8 +1,9 @@
 [
   {
     "projectTitle": "Ohlovelyone",
-    "projectDescription": "Ohlovelyone, launched in 2019, is a women's clothing boutique curating a collection of affordable, contemporary, and one-of-a-kind clothing and accessories to help customers look and feel their best.",
-    "projectImageOne": "https://fastly.picsum.photos/id/450/400/400.jpg?hmac=5bV01Mk4Ly02iHs4LKeigZre7qvDHHdGSBM2rhKhcyU",
-    "industry": "Retail, E-Commerce, Fashion"
+    "projectDescription": "Ohlovelyone, launched in 2019, is a women's clothing boutique curating a collection of affordable, contemporary, and one-of-a-kind clothing and accessories to help customers look and feel their best.",    
+    "industry": "Retail, E-Commerce, Fashion",
+    "sectionOneDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit hic quidem architecto nisi et eligendi, temporibus pariatur expedita. Fugiat numquam quibusdam ipsam nemo quam voluptatem sequi doloremque. Cupiditate numquam nemo quasi culpa dolorem officia odit vel veniam sequi illum.",
+    "sectionTwoDetails": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum impedit hic quidem architecto nisi et eligendi, temporibus pariatur expedita. Fugiat numquam quibusdam ipsam nemo quam voluptatem sequi doloremque. Cupiditate numquam nemo quasi culpa dolorem officia odit vel veniam sequi illum."
   }
 ]

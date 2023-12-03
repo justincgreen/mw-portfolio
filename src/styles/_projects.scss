@@ -37,7 +37,7 @@
       }
     }
     
-    .c-project__image {
+    .c-project__logo {
       flex-basis: 22%;
       
       @media(max-width: 767px) {
@@ -50,6 +50,10 @@
     &--wrap {
       display: flex;
       gap: 40px;
+      
+      @media(max-width: 767px) {
+        gap: 20px;
+      }
     }
     
     &--block {
@@ -58,6 +62,22 @@
     
     li {
       font-weight: 300;
+      list-style: circle;
+    }
+  }
+  
+  &__section-details {
+    display: flex;
+    gap: 20px;
+    padding: var(--space-double) 0;
+    border-bottom: 1px dotted var(--color-pink);
+    
+    p {
+      flex-basis: 60%;  
+    }
+    
+    .c-project__section-image {
+      flex-basis: 40%;
     }
   }
 }

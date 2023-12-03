@@ -17,6 +17,8 @@ import ouSchoolLogo from '../../images/ou-school-logo.png';
 import ymcaLogo from '../../images/ymca-logo.png';
 import expressLogo from '../../images/express-logo.png';
 import acLogo from '../../images/ac-logo.png';
+import ohlovelyoneLogo from '../../images/ohlovelyone-logo.png';
+import businessCardBack from '../../images/ohlovelyone/business-card-back.png';
 
 export function getStaticPaths() {
   return [
@@ -43,7 +45,7 @@ const { project } = Astro.params;
               <Project 
                 title={content.projectTitle} 
                 description={content.projectDescription} 
-                imageOne={ouHealthLogo}
+                logo={ouHealthLogo}
                 industry={content.industry} 
               >
                 <div class="c-project__meta" slot="project-meta">
@@ -105,7 +107,7 @@ const { project } = Astro.params;
              <Project 
                title={content.projectTitle} 
                description={content.projectDescription} 
-               imageOne={ouSchoolLogo} 
+               logo={ouSchoolLogo} 
                industry={content.industry}
              >              
                <div class="c-project__meta" slot="project-meta">
@@ -154,19 +156,27 @@ const { project } = Astro.params;
           );
           case 'ymca': return ymcaData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} imageOne={ymcaLogo} />
+              <Project 
+                title={content.projectTitle} 
+                description={content.projectDescription} 
+                logo={ymcaLogo} 
+              />
               <Pagination previousLink="/projects/university-of-oklahoma" nextLink="/projects/express-employment-professionals" />
             )
-          );
+          );          
           case 'express-employment-professionals': return expressData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} imageOne={expressLogo} />
+              <Project 
+                title={content.projectTitle} 
+                description={content.projectDescription} 
+                logo={expressLogo} 
+              />
               <Pagination previousLink="/projects/ymca" nextLink="/projects/arts-council-okc" />
             )
           );
           case 'arts-council-okc': return artsCouncilData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} imageOne={acLogo} />
+              <Project title={content.projectTitle} description={content.projectDescription} logo={acLogo} />
               <Pagination previousLink="/projects/express-employment-professionals" nextLink="/projects/ohlovelyone" />
             )
           );
@@ -175,8 +185,12 @@ const { project } = Astro.params;
               <Project 
                 title={content.projectTitle} 
                 description={content.projectDescription} 
-                imageOne={content.projectImageOne} 
+                logo={ohlovelyoneLogo} 
                 industry={content.industry}
+                sectionOneDetails={content.sectionOneDetails}
+                sectionOneImage={ohlovelyoneLogo}
+                sectionTwoDetails={content.sectionTwoDetails}
+                sectionTwoImage={businessCardBack}
               >              
                 <div class="c-project__meta" slot="project-meta">
                   <div class="u-margin--bottom--sm">
