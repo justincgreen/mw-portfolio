@@ -1,0 +1,44 @@
+---
+const { 
+  title, 
+  description, 
+  logo, 
+  industry, 
+  sectionOneDetails, 
+  sectionOneImage,
+  sectionTwoDetails,
+  sectionTwoImage
+} = Astro.props;
+---
+
+<div class="c-project">
+  <h1 class="c-project__title u-margin--bottom--sm">{title}</h1>
+  <!-- <h3 class="c-project__industry u-margin--bottom--sm">Industry: {industry}</h3> -->
+  
+  <div class="c-project__block">
+    <div class="c-project__description u-margin--bottom--sm">
+      
+      <p>{description}</p>
+      <div class="c-project__logo">{ logo ? <img src={logo.src} alt="Project Logo"> : null }</div>
+    </div>
+    
+    <slot name="project-meta" />   
+    
+    <h2 class="u-margin--top--lg">Projects</h2>
+    <div class="c-project__section-details">      
+      <div class="c-project__section-image">
+        { sectionOneImage ? <img src={sectionOneImage.src} alt="Project image"> : null }
+      </div>
+      
+      <p>{sectionOneDetails}</p>
+    </div>    
+    
+    <div class="c-project__section-details">      
+      <p>{sectionTwoDetails}</p>
+      
+      <div class="c-project__section-image">
+        { sectionTwoImage ? <img src={sectionTwoImage.src} alt="Project image"> : null }
+      </div>           
+    </div>    
+  </div>    
+</div>

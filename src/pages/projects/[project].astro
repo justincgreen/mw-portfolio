@@ -182,17 +182,22 @@ const { project } = Astro.params;
           );
           case 'ohlovelyone': return ohlovelyoneData.map((content) => 
             (
-              <Project 
-                title={content.projectTitle} 
-                description={content.projectDescription} 
-                logo={ohlovelyoneLogo} 
-                industry={content.industry}
-                sectionOneDetails={content.sectionOneDetails}
-                sectionOneImage={ohlovelyoneLogo}
-                sectionTwoDetails={content.sectionTwoDetails}
-                sectionTwoImage={businessCardBack}
-              >              
+              <Project>      
+                <div class="c-project__images" slot="project-images">
+                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                </div>        
+                
                 <div class="c-project__meta" slot="project-meta">
+                  <div class="c-project__description u-margin--bottom--sm" slot="project-description">
+                    <h1 class="c-project__title u-margin--bottom--sm">{content.projectTitle}</h1>
+                    <p>{content.projectDescription}</p>
+                  </div>
+                  
                   <div class="u-margin--bottom--sm">
                     <h4>Objective</h4>
                     <p>To develop a dynamic brand that showcases fun, color, warmth, and style while embodying the vision and business goals of Ohlovelyone.</p>
@@ -200,7 +205,7 @@ const { project } = Astro.params;
                   
                   <div class="c-project__meta--wrap">                                         
                     <div class="c-project__meta--block">
-                      <h4>Services Provided</h4>
+                      <h4 class="u-margin--bottom--xs">Services Provided</h4>
                       <ul>
                         <li>Brand Development</li>
                         <li>Web Design</li>
@@ -212,7 +217,7 @@ const { project } = Astro.params;
                     </div>
                     
                     <div class="c-project__meta--block">
-                      <h4>Technologies Used</h4>
+                      <h4 class="u-margin--bottom--xs">Technology Used</h4>
                       <ul>
                         <li>Adobe Photoshop</li>
                         <li>Canva</li>
@@ -224,7 +229,7 @@ const { project } = Astro.params;
                     </div>
                     
                     <div class="c-project__meta--block">
-                      <h4>Industry</h4>
+                      <h4 class="u-margin--bottom--xs">Industry</h4>
                       <ul>
                         <li>Retail</li>
                         <li>E-Commerce</li>
