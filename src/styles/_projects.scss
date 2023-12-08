@@ -14,11 +14,20 @@
     &--split {
       display: flex;
       gap: 40px;
+      
+      @media(max-width: 767px) {
+        flex-wrap: wrap;
+      }
     }
   }
   
   &__images {
     flex-basis: 50%;
+    
+    @media(max-width: 767px) {
+      order: 2;
+      flex-basis: 100%;
+    }
   }
   
   &__meta {   
@@ -26,6 +35,13 @@
     position: sticky;
     top: 150px;
     align-self: flex-start;
+    
+    @media(max-width: 767px) {
+      order: 1;
+      flex-basis: 100%;
+      position: relative;
+      top: 0;
+    }
      
     &--wrap {
       display: flex;

@@ -18,6 +18,11 @@ import ymcaLogo from '../../images/ymca-logo.png';
 import expressLogo from '../../images/express-logo.png';
 import acLogo from '../../images/ac-logo.png';
 import ohlovelyoneLogo from '../../images/ohlovelyone-logo.png';
+
+// OU Health
+import hub from '../../images/ou-health/hub.png';
+
+// Ohlovelyone
 import businessCardBack from '../../images/ohlovelyone/business-card-back.png';
 
 export function getStaticPaths() {
@@ -44,7 +49,7 @@ const { project } = Astro.params;
             (
              <Project>      
                <div class="c-project__images" slot="project-images">
-                 <img src={ouHealthLogo.src} alt="Project image"> 
+                 <img src={hub.src} alt="Project image"> 
                </div>        
                
                <div class="c-project__meta" slot="project-meta">
