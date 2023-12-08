@@ -42,75 +42,75 @@ const { project } = Astro.params;
         switch(project) {
           case 'ou-health': return ouHealthData.map((content) => 
             (
-              <Project 
-                title={content.projectTitle} 
-                description={content.projectDescription} 
-                logo={ouHealthLogo}
-                industry={content.industry} 
-              >
-                <div class="c-project__meta" slot="project-meta">
-                  <div class="u-margin--bottom--sm">
-                    <h4>Objective</h4>
-                    <p>To align internal communications and marketing with OU Health’s business objectives and build pride of place and employee engagement by communicating important news, policies, and updates to more than 11,000 employees.</p>
-                  </div>                  
-                  
-                  <div class="c-project__meta--wrap">                                              
-                    <div class="c-project__meta--block">
-                      <h4>Services Provided</h4>
-                      <ul>
-                        <li>Team Management</li>
-                        <li>Project Management</li>
-                        <li>Communication + Marketing Plan Development</li>
-                        <li>Executive Communications</li>
-                        <li>Employee Engagement</li>
-                        <li>Writing</li>
-                        <li>Editing</li>
-                        <li>Crisis Communications</li>
-                        <li>Change Management</li>
-                        <li>Brand Management</li>
-                        <li>Technology Integration</li>
-                        <li>Strategy Development + Alignment</li>
-                        <li>Analytics</li>
-                        <li>Customer Service</li>
-                      </ul>
-                    </div>
-                    
-                    <div class="c-project__meta--block">
-                      <h4>Technologies Used</h4>
-                      <ul>
-                        <li>Microsoft Office</li>
-                        <li>Adobe Photoshop</li>
-                        <li>Mailchimp</li>
-                        <li>Staffbase</li>
-                        <li>Workamajig</li>
-                        <li>Google Tools</li>
-                        <li>Outlook</li>
-                        <li>Zoom</li>
-                        <li>Microsoft Teams</li>
-                      </ul>
-                    </div>
-                    
-                    <div class="c-project__meta--block">
-                      <h4>Industry</h4>
-                      <ul>
-                        <li>Healthcare</li>
-                      </ul>
-                    </div>                                        
-                  </div>                                  
-                </div>                                
-              </Project>
+             <Project>      
+               <div class="c-project__images" slot="project-images">
+                 <img src={ouHealthLogo.src} alt="Project image"> 
+               </div>        
+               
+               <div class="c-project__meta" slot="project-meta">
+                 <div class="c-project__description u-margin--bottom--sm" slot="project-description">
+                   <h1 class="c-project__title u-margin--bottom--sm">{content.projectTitle}</h1>
+                   <p>{content.projectDescription}</p>
+                 </div>
+                 
+                 <div class="u-margin--bottom--sm">
+                   <h4>Objective</h4>
+                   <p>To align internal communications and marketing with OU Health’s business objectives and build pride of place and employee engagement by communicating important news, policies, and updates to more than 11,000 employees.</p>
+                 </div>
+                 
+                 <div class="c-project__meta--wrap">                                         
+                   <div class="c-project__meta--block">
+                     <h4 class="u-margin--bottom--xs">Services Provided</h4>
+                     <ul>
+                       <li>Brand Development</li>
+                       <li>Web Design</li>
+                       <li>Marketing</li>
+                       <li>Social Media Management</li>
+                       <li>Project Management</li>
+                       <li>Ongoing Maintenance</li>
+                     </ul>
+                   </div>
+                   
+                   <div class="c-project__meta--block">
+                     <h4 class="u-margin--bottom--xs">Technology Used</h4>
+                     <ul>
+                       <li>Microsoft Office</li>
+                       <li>Adobe Photoshop</li>
+                       <li>Mailchimp</li>
+                       <li>Staffbase</li>
+                       <li>Workamajig</li>
+                       <li>Google Tools</li>
+                       <li>Outlook</li>
+                       <li>Zoom</li>
+                       <li>Microsoft Teams</li>
+                     </ul>
+                   </div>
+                   
+                   <div class="c-project__meta--block">
+                     <h4 class="u-margin--bottom--xs">Industry</h4>
+                     <ul>
+                       <li>Healthcare</li>
+                     </ul>
+                   </div>                                  
+                 </div>                                  
+               </div> 
+             </Project>
               <Pagination projectTitle="ou-health" nextLink="/projects/university-of-oklahoma" />
             )
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
-             <Project 
-               title={content.projectTitle} 
-               description={content.projectDescription} 
-               logo={ouSchoolLogo} 
-               industry={content.industry}
-             >              
+             <Project>              
+               <div class="c-project__images" slot="project-images">
+                 <img src={ouSchoolLogo.src} alt="Project image"> 
+               </div>
+               
                <div class="c-project__meta" slot="project-meta">
+                 <div class="c-project__description u-margin--bottom--sm" slot="project-description">
+                    <h1 class="c-project__title u-margin--bottom--sm">{content.projectTitle}</h1>
+                    <p>{content.projectDescription}</p>
+                  </div>
+                  
                  <div class="u-margin--bottom--sm">
                    <h4>Objective</h4>
                    <p>To promote OU’s College of International Studies to current, prospective students and donors by highlighting the education, degrees and study abroad opportunities offered.</p>
@@ -156,27 +156,171 @@ const { project } = Astro.params;
           );
           case 'ymca': return ymcaData.map((content) => 
             (
-              <Project 
-                title={content.projectTitle} 
-                description={content.projectDescription} 
-                logo={ymcaLogo} 
-              />
+              <Project>      
+                <div class="c-project__images" slot="project-images">
+                  <img src={ymcaLogo.src} alt="Project image"> 
+                </div>        
+                
+                <div class="c-project__meta" slot="project-meta">
+                  <div class="c-project__description u-margin--bottom--sm" slot="project-description">
+                    <h1 class="c-project__title u-margin--bottom--sm">{content.projectTitle}</h1>
+                    <p>{content.projectDescription}</p>
+                  </div>
+                  
+                  <div class="u-margin--bottom--sm">
+                    <h4>Objective</h4>
+                    <p>To share the mission and activities of the YMCA with members, employees, donors and the community, while raising awareness about the Y’s dedication to healthy living, youth development and social responsibility.</p>
+                  </div>
+                  
+                  <div class="c-project__meta--wrap">                                         
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Services Provided</h4>
+                      <ul> 
+                        <li>Brand promotion</li> 
+                        <li>Community Engagement</li> 
+                        <li>Membership Marketing</li> 
+                        <li>Digital Marketing</li> 
+                        <li>Event Promotion</li> 
+                        <li>Media Relations</li> 
+                        <li>Social Media Management</li> 
+                        <li>Website Management</li> 
+                        <li>Content Creation</li> 
+                        <li>Fundraising Initiatives</li> 
+                        <li>Partnership Development</li> 
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Technology Used</h4>
+                      <ul>                        
+                        <li>Microsoft Office</li>
+                        <li>Outlook</li>
+                        <li>Adobe Photoshop</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Industry</h4>
+                      <ul>
+                        <li>Nonprofit</li>
+                        <li>Health and Wellness</li>
+                      </ul>
+                    </div>                                  
+                  </div>                                  
+                </div> 
+              </Project>
               <Pagination previousLink="/projects/university-of-oklahoma" nextLink="/projects/express-employment-professionals" />
             )
           );          
           case 'express-employment-professionals': return expressData.map((content) => 
             (
-              <Project 
-                title={content.projectTitle} 
-                description={content.projectDescription} 
-                logo={expressLogo} 
-              />
+              <Project>      
+                <div class="c-project__images" slot="project-images">
+                  <img src={expressLogo.src} alt="Project image"> 
+                </div>        
+                
+                <div class="c-project__meta" slot="project-meta">
+                  <div class="c-project__description u-margin--bottom--sm" slot="project-description">
+                    <h1 class="c-project__title u-margin--bottom--sm">{content.projectTitle}</h1>
+                    <p>{content.projectDescription}</p>
+                  </div>
+                  
+                  <div class="u-margin--bottom--sm">
+                    <h4>Objective</h4>
+                    <p>To enhance the Express brand and build its image among franchisees, potential franchisees, job seekers and businesses across the world.</p>
+                  </div>
+                  
+                  <div class="c-project__meta--wrap">                                         
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Services Provided</h4>
+                      <ul> 
+                        <li>Content Creation</li> 
+                        <li>Social Media Management</li> 
+                        <li>Digital Communications</li> 
+                        <li>Writing</li> 
+                        <li>Event Management</li> 
+                        <li>Project Planning</li> 
+                        <li>Franchise Sales Support</li> 
+                        <li>Franchise Training</li> 
+                        <li>Conducting, Recording, and Editing Audio Interviews</li> 
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Technology Used</h4>
+                      <ul>                        
+                        <li>Microsoft Office</li>
+                        <li>Outlook</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Constant Contact</li>
+                        <li>Audio Recording/Editing Equipment</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Industry</h4>
+                      <ul>
+                        <li>Staffing</li>
+                        <li>Employment Services</li>
+                      </ul>
+                    </div>                                  
+                  </div>                                  
+                </div> 
+              </Project>
               <Pagination previousLink="/projects/ymca" nextLink="/projects/arts-council-okc" />
             )
           );
           case 'arts-council-okc': return artsCouncilData.map((content) => 
             (
-              <Project title={content.projectTitle} description={content.projectDescription} logo={acLogo} />
+              <Project>      
+                <div class="c-project__images" slot="project-images">
+                  <img src={acLogo.src} alt="Project image"> 
+                </div>        
+                
+                <div class="c-project__meta" slot="project-meta">
+                  <div class="c-project__description u-margin--bottom--sm" slot="project-description">
+                    <h1 class="c-project__title u-margin--bottom--sm">{content.projectTitle}</h1>
+                    <p>{content.projectDescription}</p>
+                  </div>
+                  
+                  <div class="u-margin--bottom--sm">
+                    <h4>Objective</h4>
+                    <p>To build the organization's public image, foster community engagement, and effectively communicate the organization’s cultural initiatives.</p>
+                  </div>
+                  
+                  <div class="c-project__meta--wrap">                                         
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Services Provided</h4>
+                      <ul> 
+                        <li>Marketing</li>
+                        <li>Public Relations</li>
+                        <li>Media Relations</li>
+                        <li>Social Media Management</li>
+                        <li>Event Promotion</li>
+                        <li>Internal Communications</li>
+                        <li>Content Creation</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Technology Used</h4>
+                      <ul>                        
+                        <li>Microsoft Office</li>
+                        <li>Outlook</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Mailchimp</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="c-project__meta--block">
+                      <h4 class="u-margin--bottom--xs">Industry</h4>
+                      <ul>
+                        <li>Arts and Entertainment</li>
+                      </ul>
+                    </div>                                  
+                  </div>                                  
+                </div> 
+              </Project>
               <Pagination previousLink="/projects/express-employment-professionals" nextLink="/projects/ohlovelyone" />
             )
           );
@@ -185,11 +329,7 @@ const { project } = Astro.params;
               <Project>      
                 <div class="c-project__images" slot="project-images">
                   <img src={ohlovelyoneLogo.src} alt="Project image"> 
-                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
-                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
-                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
-                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
-                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
+                  <img src={businessCardBack.src} alt="Project image"> 
                 </div>        
                 
                 <div class="c-project__meta" slot="project-meta">
