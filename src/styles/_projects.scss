@@ -13,16 +13,21 @@
   &__block {
     &--split {
       display: flex;
-      gap: 40px;
+      gap: 60px;
       
       @media(max-width: 767px) {
         flex-wrap: wrap;
+        gap: 40px;
       }
     }
   }
   
   &__images {
-    flex-basis: 50%;
+    flex-basis: 40%;
+    
+    img {
+      margin-bottom: var(--space-double);
+    }
     
     @media(max-width: 767px) {
       order: 2;
@@ -31,7 +36,7 @@
   }
   
   &__meta {   
-    flex-basis: 50%;
+    flex-basis: 60%;
     position: sticky;
     top: 150px;
     align-self: flex-start;

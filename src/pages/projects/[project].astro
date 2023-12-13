@@ -23,7 +23,17 @@ import ohlovelyoneLogo from '../../images/ohlovelyone-logo.png';
 import hub from '../../images/ou-health/hub.png';
 
 // Ohlovelyone
+import booth from '../../images/ohlovelyone/booth.jpg';
+import businessCardFront from '../../images/ohlovelyone/business-card-front.png';
 import businessCardBack from '../../images/ohlovelyone/business-card-back.png';
+import facebookPost from '../../images/ohlovelyone/facebook-post.jpg';
+import hangTagFront from '../../images/ohlovelyone/hang-tag-front.png';
+import hangTagBack from '../../images/ohlovelyone/hang-tag-back.png';
+import igPost from '../../images/ohlovelyone/ig-post.jpg';
+import newsletter from '../../images/ohlovelyone/newsletter.jpg';
+import newsletterTwo from '../../images/ohlovelyone/newsletter-2.jpg';
+import sticker from '../../images/ohlovelyone/sticker.png';
+import website from '../../images/ohlovelyone/website.png';
 
 export function getStaticPaths() {
   return [
@@ -333,8 +343,17 @@ const { project } = Astro.params;
             (
               <Project>      
                 <div class="c-project__images" slot="project-images">
-                  <img src={ohlovelyoneLogo.src} alt="Project image"> 
-                  <img src={businessCardBack.src} alt="Project image"> 
+                  <img src={ohlovelyoneLogo.src} alt="Project logo"> 
+                  <img src={businessCardFront .src} alt="Business Card Front"> 
+                  <img src={businessCardBack.src} alt="Business Card Back"> 
+                  <img src={hangTagFront.src} alt="Branding"> 
+                  <img src={hangTagBack.src} alt="Branding"> 
+                  <img src={facebookPost.src} alt="Facebook Post"> 
+                  <img src={igPost.src} alt="Instagram Post"> 
+                  <img src={newsletter.src} alt="Newsletter"> 
+                  <img src={newsletterTwo.src} alt="Newsletter"> 
+                  <img src={sticker.src} alt="Sticker"> 
+                  <img src={website.src} alt="Website"> 
                 </div>        
                 
                 <div class="c-project__meta" slot="project-meta">
