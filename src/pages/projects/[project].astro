@@ -33,7 +33,7 @@ import igPost from '../../images/ohlovelyone/ig-post.jpg';
 import newsletter from '../../images/ohlovelyone/newsletter.jpg';
 import newsletterTwo from '../../images/ohlovelyone/newsletter-2.jpg';
 import sticker from '../../images/ohlovelyone/sticker.png';
-import website from '../../images/ohlovelyone/website.png';
+import websiteFull from '../../images/ohlovelyone/website-full.png';
 
 export function getStaticPaths() {
   return [
@@ -343,17 +343,26 @@ const { project } = Astro.params;
             (
               <Project>      
                 <div class="c-project__images" slot="project-images">
+                  <h2>Logo</h2>
                   <img src={ohlovelyoneLogo.src} alt="Project logo"> 
-                  <img src={businessCardFront .src} alt="Business Card Front"> 
+                  <h2>Business Card</h2>
+                  <img src={businessCardFront.src} alt="Business Card Front"> 
                   <img src={businessCardBack.src} alt="Business Card Back"> 
+                  <h2>Hang Tag</h2>
                   <img src={hangTagFront.src} alt="Branding"> 
                   <img src={hangTagBack.src} alt="Branding"> 
+                  <h2>Social Media</h2>
                   <img src={facebookPost.src} alt="Facebook Post"> 
                   <img src={igPost.src} alt="Instagram Post"> 
+                  <h2>Newsletter</h2>
                   <img src={newsletter.src} alt="Newsletter"> 
                   <img src={newsletterTwo.src} alt="Newsletter"> 
+                  <h2>Sticker</h2>
                   <img src={sticker.src} alt="Sticker"> 
-                  <img src={website.src} alt="Website"> 
+                  <h2>Website</h2>
+                  <img src={websiteFull.src} alt="Website"> 
+                  <h2>Retail Space</h2>
+                  <img src={booth.src} alt="Booth Space"> 
                 </div>        
                 
                 <div class="c-project__meta" slot="project-meta">
