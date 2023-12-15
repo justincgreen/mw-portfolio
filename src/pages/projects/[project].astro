@@ -22,6 +22,19 @@ import ohlovelyoneLogo from '../../images/ohlovelyone-logo.png';
 // OU Health
 import hub from '../../images/ou-health/hub.png';
 
+// OU University
+import compass2016 from '../../images/ou/compass-2016.jpg';
+import compass2017 from '../../images/ou/compass-2017.jpg';
+import globalNewsletter from '../../images/ou/global-newsletter-cover.jpg';
+import internationalProfile2015 from '../../images/ou/international-profile-2015.jpg';
+import internationalProfile2016 from '../../images/ou/international-profile-2016.jpg';
+import jgaAffairs from '../../images/ou/jga-affairs.jpg';
+import jgaEntries from '../../images/ou/jga-entries.jpg';
+import snapshotOne from '../../images/ou/snapshot-1.jpg';
+import snapshotTwo from '../../images/ou/snapshot-2.jpg';
+import studyAbroadThree from '../../images/ou/study-abroad-3.jpg';
+import studyAbroadFour from '../../images/ou/study-abroad-4.jpg';
+
 // Ohlovelyone
 import booth from '../../images/ohlovelyone/booth.jpg';
 import businessCardFront from '../../images/ohlovelyone/business-card-front.png';
@@ -116,8 +129,40 @@ const { project } = Astro.params;
           case 'university-of-oklahoma': return universityData.map((content) => 
             (
              <Project>              
-               <div class="c-project__images" slot="project-images">
-                 <img src={ouSchoolLogo.src} alt="Project image"> 
+               <div class="c-project__images" slot="project-images">                 
+                  <h2 class="u-padding--bottom--xs">Compass</h2>
+                  <a href="https://issuu.com/oucis/docs/2016_compass_final" target="_blank">                  
+                    <img src={compass2016.src} alt="Compass 2016"> 
+                  </a>
+                  <a href="https://issuu.com/oucis/docs/compass_final" target="_blank">
+                    <img src={compass2017.src} alt="Compass 2017"> 
+                  </a>
+                  <h2 class="u-padding--bottom--xs">Global OU Study Centers Newsletter</h2>   
+                  <a href="https://globalou.tumblr.com/" target="_blank">
+                    <img src={globalNewsletter.src} alt="Global Newsletter">
+                  </a> 
+                  <h2 class="u-padding--bottom--xs">International Profile</h2>   
+                  <a href="https://issuu.com/oucis/docs/2015_international_profile" target="_blank">
+                    <img src={internationalProfile2015.src} alt="International Profile 2015">
+                  </a>          
+                  <a href="https://issuu.com/oucis/docs/2016_international_profile_e5a107be7b1658" target="_blank">   
+                    <img src={internationalProfile2016.src} alt="International Profile 2016">  
+                  </a>
+                  <h2 class="u-padding--bottom--xs">Journal of Global Affairs</h2>   
+                  <a href="https://issuu.com/oucis/docs/jga_2016" target="_blank">
+                   <img src={jgaAffairs.src} alt="JGA Affairs">    
+                  </a>         
+                  <img src={jgaEntries.src} alt="JGA Entries">    
+                  <h2 class="u-padding--bottom--xs">Snapshot</h2>   
+                  <img src={snapshotOne.src} alt="Snapshot">             
+                  <img src={snapshotTwo.src} alt="Snapshot">     
+                  <h2 class="u-padding--bottom--xs">The Virtures of Study Abroad </h2> 
+                  <a href="https://issuu.com/oucis/docs/virtues_2016_" target="_blank">  
+                    <img src={studyAbroadThree.src} alt="Snapshot"> 
+                  </a>   
+                  <a href="https://issuu.com/oucis/docs/virtues_volume_iv" target="_blank">         
+                    <img src={studyAbroadFour.src} alt="Snapshot">    
+                  </a>
                </div>
                
                <div class="c-project__meta" slot="project-meta">
