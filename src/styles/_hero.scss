@@ -1,9 +1,14 @@
 .hero {
   width: 75%;
   margin: auto;
+  padding-top: var(--space-double);
   
-  @media(max-width: 767px) {
+  @media(max-width: 1800px) {
     width: 90%;
+  }
+  
+  @media(min-width: 1600px) {
+    padding-top: 100px;
   }
   
   &__grid {

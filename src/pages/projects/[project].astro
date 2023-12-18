@@ -12,8 +12,8 @@ import artsCouncilData from '../../data/artsCouncilData.json';
 import ohlovelyoneData from '../../data/ohlovelyoneData.json';
 
 // Image imports
-import ouHealthLogo from '../../images/ou-health-logo.png';
-import ouSchoolLogo from '../../images/ou-school-logo.png';
+// import ouHealthLogo from '../../images/ou-health-logo.png';
+// import ouSchoolLogo from '../../images/ou-school-logo.png';
 import ymcaLogo from '../../images/ymca-logo.png';
 import expressLogo from '../../images/express-logo.png';
 import acLogo from '../../images/ac-logo.png';
@@ -72,7 +72,7 @@ const { project } = Astro.params;
             (
              <Project>      
                <div class="c-project__images" slot="project-images">
-                 <img src={hub.src} alt="Project image"> 
+                 <img src={hub.src} alt="OU Health Hub"> 
                </div>        
                
                <div class="c-project__meta" slot="project-meta">
@@ -123,7 +123,7 @@ const { project } = Astro.params;
                  </div>                                  
                </div> 
              </Project>
-              <Pagination projectTitle="ou-health" nextLink="/projects/university-of-oklahoma" />
+             <Pagination projectTitle="ou-health" nextLink="/projects/university-of-oklahoma" />
             )
           );
           case 'university-of-oklahoma': return universityData.map((content) => 
@@ -134,13 +134,16 @@ const { project } = Astro.params;
                   <a href="https://issuu.com/oucis/docs/2016_compass_final" target="_blank">                  
                     <img src={compass2016.src} alt="Compass 2016"> 
                   </a>
+                  
                   <a href="https://issuu.com/oucis/docs/compass_final" target="_blank">
                     <img src={compass2017.src} alt="Compass 2017"> 
                   </a>
+                  
                   <h2 class="u-padding--bottom--xs">Global OU Study Centers Newsletter</h2>   
                   <a href="https://globalou.tumblr.com/" target="_blank">
                     <img src={globalNewsletter.src} alt="Global Newsletter">
-                  </a> 
+                  </a>
+                  
                   <h2 class="u-padding--bottom--xs">International Profile</h2>   
                   <a href="https://issuu.com/oucis/docs/2015_international_profile" target="_blank">
                     <img src={internationalProfile2015.src} alt="International Profile 2015">
@@ -148,14 +151,17 @@ const { project } = Astro.params;
                   <a href="https://issuu.com/oucis/docs/2016_international_profile_e5a107be7b1658" target="_blank">   
                     <img src={internationalProfile2016.src} alt="International Profile 2016">  
                   </a>
+                  
                   <h2 class="u-padding--bottom--xs">Journal of Global Affairs</h2>   
                   <a href="https://issuu.com/oucis/docs/jga_2016" target="_blank">
                    <img src={jgaAffairs.src} alt="JGA Affairs">    
                   </a>         
-                  <img src={jgaEntries.src} alt="JGA Entries">    
+                  <img src={jgaEntries.src} alt="JGA Entries">
+                      
                   <h2 class="u-padding--bottom--xs">Snapshot</h2>   
                   <img src={snapshotOne.src} alt="Snapshot">             
-                  <img src={snapshotTwo.src} alt="Snapshot">     
+                  <img src={snapshotTwo.src} alt="Snapshot">
+                    
                   <h2 class="u-padding--bottom--xs">The Virtures of Study Abroad </h2> 
                   <a href="https://issuu.com/oucis/docs/virtues_2016_" target="_blank">  
                     <img src={studyAbroadThree.src} alt="Snapshot"> 
@@ -390,22 +396,29 @@ const { project } = Astro.params;
                 <div class="c-project__images" slot="project-images">
                   <h2>Logo</h2>
                   <img src={ohlovelyoneLogo.src} alt="Project logo"> 
+                  
                   <h2 class="u-padding--bottom--xs">Business Card</h2>
                   <img src={businessCardFront.src} alt="Business Card Front"> 
-                  <img src={businessCardBack.src} alt="Business Card Back"> 
+                  <img src={businessCardBack.src} alt="Business Card Back">
+                   
                   <h2 class="u-padding--bottom--xs">Hang Tag</h2>
                   <img src={hangTagFront.src} alt="Branding"> 
-                  <img src={hangTagBack.src} alt="Branding"> 
+                  <img src={hangTagBack.src} alt="Branding">
+                   
                   <h2 class="u-padding--bottom--xs">Social Media</h2>
                   <img src={facebookPost.src} alt="Facebook Post"> 
                   <a href="https://www.instagram.com/shopohlovelyone/" target="_blank"><img src={igPost.src} alt="Instagram Post"></a>
+                  
                   <h2 class="u-padding--bottom--xs">Newsletter</h2>
                   <img src={newsletter.src} alt="Newsletter"> 
-                  <img src={newsletterTwo.src} alt="Newsletter"> 
+                  <img src={newsletterTwo.src} alt="Newsletter">
+                   
                   <h2 class="u-padding--bottom--xs">Sticker</h2>
-                  <img src={sticker.src} alt="Sticker"> 
+                  <img src={sticker.src} alt="Sticker">
+                   
                   <h2 class="u-padding--bottom--xs">Website</h2>
                   <a href="https://ohlovelyone.com/" target="_blank"><img src={websiteFull.src} alt="Website"></a>
+                  
                   <h2 class="u-padding--bottom--xs">Retail Space</h2>
                   <img src={booth.src} alt="Booth Space"> 
                 </div>        
