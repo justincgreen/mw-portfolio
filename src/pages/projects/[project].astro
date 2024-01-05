@@ -59,9 +59,19 @@ import ymca6 from '../../images/ymca/YMCA-6.jpg';
 import ymca7 from '../../images/ymca/YMCA-7.jpg';
 import ymca8 from '../../images/ymca/YMCA-8.jpg';
 import ymca9 from '../../images/ymca/YMCA-9.jpg';
+import ymca10 from '../../images/ymca/YMCA-10.png';
 
 // Express
-
+import express1 from '../../images/express/Express-1.jpg';
+import express2 from '../../images/express/Express-2.jpg';
+import express3 from '../../images/express/Express-3.jpg';
+import express4 from '../../images/express/Express-4.jpg';
+import express5 from '../../images/express/Express-5.jpg';
+import express6 from '../../images/express/Express-6.jpg';
+import express7 from '../../images/express/Express-7.jpg';
+import express8 from '../../images/express/Express-8.jpg';
+import express9 from '../../images/express/Express-9.jpg';
+import express10 from '../../images/express/Express-10.jpg';
 
 
 // Arts Council
@@ -320,6 +330,10 @@ const { project } = Astro.params;
                 <div class="c-project__images" slot="project-images">
                   <img src={ymcaLogo.src} alt="Project image"> 
                   
+                  <a href="https://www.oklahoman.com/story/lifestyle/health-fitness/2013/04/14/ymcas-annual-community-campaign-raises-11-million/60981908007/" target="_blank">
+                    <img src={ymca10.src} alt="YMCA"> 
+                  </a>
+                  
                   <a href={ymca1.src} target="_blank">
                     <img src={ymca1.src} alt="YMCA"> 
                   </a>
@@ -355,6 +369,7 @@ const { project } = Astro.params;
                   <a href={ymca9.src} target="_blank">
                     <img src={ymca9.src} alt="YMCA"> 
                   </a>
+                  
                 </div>        
                 
                 <div class="c-project__meta" slot="project-meta">
@@ -411,8 +426,46 @@ const { project } = Astro.params;
           case 'express-employment-professionals': return expressData.map((content) => 
             (
               <Project>      
-                <div class="c-project__images" slot="project-images">
-                  <img src={expressLogo.src} alt="Project image"> 
+                <div class="c-project__images" slot="project-images">                                  
+                  <a href={express1.src} target="_blank">
+                   <img src={express1.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express2.src} target="_blank">
+                   <img src={express2.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express3.src} target="_blank">
+                   <img src={express3.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express4.src} target="_blank">
+                   <img src={express4.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express5.src} target="_blank">
+                   <img src={express5.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express6.src} target="_blank">
+                   <img src={express6.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express7.src} target="_blank">
+                   <img src={express7.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express8.src} target="_blank">
+                   <img src={express8.src} alt="Express"> 
+                  </a>
+                  
+                  <a href={express9.src} target="_blank">
+                   <img src={express9.src} alt="Express"> 
+                  </a>
+                 
+                  <a href={express10.src} target="_blank">
+                    <img src={express10.src} alt="Express"> 
+                  </a>                                  
                 </div>        
                 
                 <div class="c-project__meta" slot="project-meta">
