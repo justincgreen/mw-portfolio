@@ -5,4 +5,13 @@
   @media(max-width: 767px) {
     padding: var(--space-triple) var(--space);
   }
+  
+  &__call-sign {
+    margin-top: 5px;
+    
+    a {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
 }
