@@ -32,6 +32,7 @@
   
   &__links {
     display: flex;
+    align-items: center;
     gap: 20px;
     
     @media(max-width: 767px) {
@@ -66,6 +67,22 @@
     
     &:hover {
       color: var(--color-teal);
+    }
+    
+    &--social {
+      svg {
+        border-radius: 5px;
+        
+        path {
+          transition: var(--transition-all);      
+        }
+        
+        &:hover {
+          path {
+            fill: var(--color-teal);
+          }
+        }
+      }
     }
   }
 }
